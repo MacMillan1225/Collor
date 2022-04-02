@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>base</title>
+</head>
+
+<script src="js/importcolor.js">
+</script>
+	
+<style>
+	.color {
+		display: flex;
+		border: solid 0px;
+		border-radius: 20px;
+		width: 100px;
+		height: 100px;
+		float: left;
+	}
+	.column{
+		display: flex;
+		height: 100px;
+		padding: 25px;
+		border-bottom: solid 1px;
+	}
+	.text{
+		display: flex;
+		font-family: '思源宋体 CN';
+		height: 98px;
+		width: calc(100% - 120px);
+		padding= 25px;
+		float: left;
+	}
+	.tag{
+		display: flex;
+		flex-wrap: wrap;
+		float: left;
+		height: 95px;
+		width: 170px
+	}
+	.color_name{
+		display: flex;
+		align-content: flex-start;
+		position: relative;
+		left:20px;
+		font-size: 25px;
+		font-weight: bold;
+	}
+	.color_value{
+		display: flex;
+		align-content: flex-start;
+		position: relative;
+		left: 20px;
+		top: 5px;
+	}
+	.story{
+	display: flex;
+	color:#7E7E7E;
+    float: left;
+    width: 80%;
+    height: 95px;
+	}
+</style>
+
+<body>
+	<div class="column" onclick="changeImage()">
+		<div class="color" style="background:#C92729"></div>
+		<div class="text">
+			<div class="tag">
+				<div class="color_name">红色</div>
+				<div class="color_value">RGB: 123 456 789<br>HEX: #C92729</div>
+			</div>
+			<div class="story">红色（Red），是电磁波的可见光谱中低频末端的颜色，频率范围为380~480THz，对应空气中波长大约为780~620nm。红色是光的三原色和心理四色之一，类似于新鲜血液的颜色。</div>
+		</div>
+	</div>
+</body>
+</html>
